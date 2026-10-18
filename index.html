@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloom of Love – Gửi ngàn yêu thương | 20.10</title>
+<meta name="description" content="Website chúc mừng Ngày Phụ nữ Việt Nam 20/10 – Bloom of Love.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Bông hoa vector dùng chung: gọi bằng <svg><use href="#flower"/></svg>, màu lấy từ thuộc tính color của CSS -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="flower" viewBox="0 0 100 100">
+    <g fill="currentColor">
+      <ellipse cx="50" cy="25" rx="14" ry="23"/>
+      <ellipse cx="50" cy="25" rx="14" ry="23" transform="rotate(60 50 50)"/>
+      <ellipse cx="50" cy="25" rx="14" ry="23" transform="rotate(120 50 50)"/>
+      <ellipse cx="50" cy="25" rx="14" ry="23" transform="rotate(180 50 50)"/>
+      <ellipse cx="50" cy="25" rx="14" ry="23" transform="rotate(240 50 50)"/>
+      <ellipse cx="50" cy="25" rx="14" ry="23" transform="rotate(300 50 50)"/>
+    </g>
+    <circle cx="50" cy="50" r="17" fill="#fff" opacity=".28"/>
+    <circle cx="50" cy="50" r="8" fill="#D9B56D"/>
+  </symbol>
+</svg>
+
+<!-- THANH MENU -->
+<header class="nav">
+  <a class="brand" href="#hero">Bloom of Love</a>
+  <nav id="menu" aria-label="Điều hướng chính">
+    <a href="#thu">Bức thư</a>
+    <a href="#trian">Tri ân</a>
+    <a href="#vuon">Vườn hoa</a>
+    <a href="#bimat">Lá thư bí mật</a>
+    <a href="#taoloi">Tạo lời chúc</a>
+    <a href="#khoanhkhac">Khoảnh khắc</a>
+  </nav>
+  <button class="icon-btn" id="musicBtn" aria-pressed="false" aria-label="Bật nhạc nền">♪</button>
+  <button class="icon-btn nav-toggle" id="navToggle" aria-expanded="false" aria-controls="menu" aria-label="Mở menu">☰</button>
+</header>
+
+<main>
+
+<!-- PHẦN A: MÀN HÌNH MỞ ĐẦU -->
+<section class="hero" id="hero" aria-labelledby="heroTitle">
+  <div class="fx" id="petals" aria-hidden="true"></div>
+  <div class="fx" id="heroSparks" aria-hidden="true"></div>
+  <svg class="hero-flower f1" aria-hidden="true"><use href="#flower"/></svg>
+  <svg class="hero-flower f2" aria-hidden="true"><use href="#flower"/></svg>
+  <div class="hero-inner">
+    <p class="eyebrow">Bloom of Love – Gửi ngàn yêu thương</p>
+    <p class="date" aria-label="Ngày 20 tháng 10"><span>20</span><i>.</i><span>10</span></p>
+    <p class="en">VIETNAMESE WOMEN'S DAY</p>
+    <p class="sub">Gửi những đóa hoa tuyệt vời nhất của cuộc đời.</p>
+    <h1 id="heroTitle">
+      <span class="line" style="--d:1.1s">Dành tặng một nửa</span>
+      <span class="line" style="--d:1.5s">dịu dàng của thế giới.</span>
+    </h1>
+    <a class="btn" href="#thu" style="--d:2s">Mở món quà yêu thương</a>
+  </div>
+  <a class="scroll-hint" href="#thu" aria-label="Cuộn xuống nội dung"><span></span></a>
+</section>
+
+<!-- PHẦN B: BỨC THƯ YÊU THƯƠNG -->
+<section class="sec" id="thu" aria-labelledby="thuTitle">
+  <div class="wrap">
+    <article class="letter reveal">
+      <div class="paper">
+        <svg class="corner c1" aria-hidden="true"><use href="#flower"/></svg>
+        <svg class="corner c2" aria-hidden="true"><use href="#flower"/></svg>
+        <div data-stagger>
+          <h2 id="thuTitle">Có những yêu thương chẳng thể nói thành lời…</h2>
+          <p>Có những người phụ nữ chẳng bao giờ kể công. Họ dậy sớm hơn chúng ta, ngủ muộn hơn chúng ta, và vẫn kịp hỏi một câu giản dị: “Ăn cơm chưa?”. Sự quan tâm ấy nhỏ đến mức đôi khi ta quên mất đó là một món quà.</p>
+          <p>Là người mẹ giấu mệt mỏi sau nụ cười. Là người bà kể mãi một câu chuyện cũ mà ta vẫn muốn nghe thêm. Là cô giáo đứng lại thêm mười phút để giảng lại một bài khó. Là người bạn, người chị, người em ngồi cạnh ta những ngày chênh vênh.</p>
+          <p>Nhưng họ không chỉ là người chăm sóc. Họ còn là những con người có ước mơ, có lúc yếu lòng và có niềm kiêu hãnh rất riêng. Họ xứng đáng được lắng nghe, được nghỉ ngơi và được sống theo cách mình chọn.</p>
+          <p>Vì vậy hôm nay, xin gửi một lời cảm ơn thật lòng: cảm ơn vì đã ở đây, và vì đã dịu dàng mà chẳng hề yếu đuối.</p>
+          <p class="sign">Chúc bạn luôn được yêu thương như cách bạn đã yêu thương thế giới này.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- PHẦN C: NHỮNG ĐÓA HOA TRI ÂN -->
+<section class="sec bg-blush" id="trian" aria-labelledby="triTitle">
+  <div class="wrap center">
+    <div class="reveal">
+      <h2 class="title" id="triTitle">Những đóa hoa tri ân</h2>
+      <span class="divider"></span>
+      <p class="lead">Thế giới trở nên dịu dàng hơn vì có những người phụ nữ. Cảm ơn vì đã yêu thương, hy sinh, chở che và làm cuộc sống này trở nên tươi đẹp.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal" style="--g1:#FCE8EC;--g2:#F7C8D0;--c:#c4566f">
+        <div class="card-art"><svg role="img" aria-label="Bông hoa hồng dành tặng mẹ"><use href="#flower"/></svg></div>
+        <div class="card-body">
+          <h3><small>DÀNH TẶNG MẸ</small>Vòng tay và mái ấm</h3>
+          <p>Cảm ơn mẹ vì vòng tay luôn rộng mở và ngôi nhà luôn sáng đèn. Tình yêu của mẹ là nơi con học cách tin vào cuộc sống. Chúc mẹ khỏe mạnh, bình yên và được yêu thương nhiều như mẹ đã trao đi.</p>
+        </div>
+      </article>
+      <article class="card reveal" style="--g1:#FFF3DC;--g2:#F3DDA8;--c:#b98a2c">
+        <div class="card-art"><svg role="img" aria-label="Bông hoa vàng dành tặng cô giáo"><use href="#flower"/></svg></div>
+        <div class="card-body">
+          <h3><small>DÀNH TẶNG CÔ GIÁO</small>Ánh sáng của tri thức</h3>
+          <p>Cảm ơn cô vì những bài học và sự tận tâm không đòi hỏi gì. Cô thắp lên ánh sáng tri thức, và dạy chúng em cả cách đặt câu hỏi lẫn cách dám tin vào chính mình.</p>
+        </div>
+      </article>
+      <article class="card reveal" style="--g1:#F7C8D0;--g2:#E8A3B4;--c:#791D37">
+        <div class="card-art"><svg role="img" aria-label="Bông hoa đỏ rượu vang dành tặng những người phụ nữ tuyệt vời"><use href="#flower"/></svg></div>
+        <div class="card-body">
+          <h3><small>DÀNH TẶNG NHỮNG NGƯỜI PHỤ NỮ TUYỆT VỜI</small>Rực rỡ theo cách riêng</h3>
+          <p>Chúc bạn tự tin với vẻ đẹp rất riêng của mình, đủ can đảm để theo đuổi ước mơ và luôn có quyền chọn con đường mình muốn đi. Bạn không cần giống ai để tỏa sáng.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PHẦN D: VƯỜN HOA NHỮNG LỜI CHÚC -->
+<section class="sec" id="vuon" aria-labelledby="vuonTitle">
+  <div class="wrap center">
+    <div class="reveal">
+      <h2 class="title" id="vuonTitle">Vườn hoa những lời chúc</h2>
+      <span class="divider"></span>
+      <p class="lead">Mỗi bông hoa giữ một lời chúc. Chạm vào để mở nhé.</p>
+    </div>
+    <div class="garden reveal" id="garden"></div>
+  </div>
+</section>
+
+<!-- PHẦN E: LÁ THƯ BÍ MẬT -->
+<section class="sec bg-pink" id="bimat" aria-labelledby="bimatTitle">
+  <div class="wrap center">
+    <h2 class="title" id="bimatTitle">Lá thư bí mật</h2>
+    <p class="env-line">Có một điều mình muốn nói với bạn…</p>
+    <div class="env" id="env" aria-hidden="true">
+      <div class="env-back"></div>
+      <div class="env-flap"></div>
+      <div class="env-front"></div>
+      <div class="seal">♥</div>
+    </div>
+    <button class="btn wine" id="envBtn" aria-expanded="false" aria-controls="secret">Mở lá thư</button>
+    <div class="secret" id="secret" aria-hidden="true">
+      <div>
+        <article class="note">
+          <p><strong>Gửi người phụ nữ tuyệt vời,</strong></p>
+          <p>Có thể bạn không phải lúc nào cũng nhận ra giá trị của chính mình. Nhưng sự hiện diện của bạn, lòng tốt của bạn, những cố gắng thầm lặng và cả những ước mơ bạn đang theo đuổi đều rất đáng trân trọng.</p>
+          <p>Mong rằng bạn luôn có đủ sức mạnh để bước tiếp, đủ bình yên để nghỉ ngơi, đủ dũng cảm để sống theo cách mình mong muốn và luôn gặp được những người biết trân trọng bạn.</p>
+          <p>Ngày 20/10 không chỉ là một ngày nhận hoa hay lời chúc. Đó còn là dịp để nhắc nhau rằng bạn xứng đáng được yêu thương, tôn trọng và hạnh phúc mỗi ngày.</p>
+          <p>Chúc bạn một ngày 20/10 thật dịu dàng và một hành trình phía trước đầy ánh sáng.</p>
+          <p class="sign">Thân gửi,<br>Một lời chúc chân thành.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHẦN F: TẠO LỜI CHÚC CỦA RIÊNG BẠN -->
+<section class="sec" id="taoloi" aria-labelledby="taoTitle">
+  <div class="wrap center">
+    <div class="reveal">
+      <h2 class="title" id="taoTitle">Tạo lời chúc của riêng bạn</h2>
+      <span class="divider"></span>
+      <p class="lead">Nhập tên người nhận, chọn đối tượng và nhận ngay một tấm thiệp để gửi đi.</p>
+    </div>
+    <div class="gen reveal">
+      <div class="form">
+        <div>
+          <label for="nameInput">Tên người nhận</label>
+          <input id="nameInput" type="text" maxlength="30" placeholder="Ví dụ: Lan (có thể để trống)" autocomplete="off">
+        </div>
+        <div>
+          <label for="audSelect">Người nhận là</label>
+          <select id="audSelect">
+            <option>Mẹ</option><option>Cô giáo</option><option>Bạn bè</option><option>Chị em</option><option>Người phụ nữ đặc biệt</option>
+          </select>
+        </div>
+        <button class="btn wine" id="genBtn" type="button">Tạo lời chúc</button>
+      </div>
+      <div>
+        <div class="wish-card" id="wishCard" aria-live="polite">
+          <p class="hi">Tấm thiệp của bạn sẽ hiện ở đây</p>
+          <p class="body">Hãy nhấn “Tạo lời chúc” để bắt đầu.</p>
+        </div>
+        <button class="btn wine copy" id="copyBtn" type="button" disabled>Sao chép lời chúc</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHẦN G: KHOẢNH KHẮC YÊU THƯƠNG -->
+<section class="sec bg-blush" id="khoanhkhac" aria-labelledby="khoanhTitle">
+  <div class="wrap center">
+    <div class="reveal">
+      <h2 class="title" id="khoanhTitle">Khoảnh khắc yêu thương</h2>
+      <span class="divider"></span>
+    </div>
+    <div class="gallery">
+      <figure class="shot s1 reveal" style="--g1:#F7C8D0;--g2:#c4566f;--c:#FFF8F0"><svg role="img" aria-label="Bông hoa hồng phấn đang nở"><use href="#flower"/></svg><figcaption>Dịu dàng là một sức mạnh.</figcaption></figure>
+      <figure class="shot s2 reveal" style="--g1:#FFF3DC;--g2:#D9B56D;--c:#FFF8F0"><svg role="img" aria-label="Bông hoa vàng ánh kim"><use href="#flower"/></svg><figcaption>Bạn xứng đáng với những điều tốt đẹp.</figcaption></figure>
+      <figure class="shot s3 reveal" style="--g1:#a73a58;--g2:#791D37;--c:#F7C8D0"><svg role="img" aria-label="Bông hoa đỏ rượu vang"><use href="#flower"/></svg><figcaption>Mỗi người đều có một cách tỏa sáng riêng.</figcaption></figure>
+      <figure class="shot s4 reveal" style="--g1:#FCE8EC;--g2:#E8A3B4;--c:#FFF8F0"><svg role="img" aria-label="Bông hoa hồng nhạt"><use href="#flower"/></svg><figcaption>Mong bình yên luôn ở bên bạn.</figcaption></figure>
+      <figure class="shot s5 reveal" style="--g1:#E8A3B4;--g2:#D9B56D;--c:#FFF8F0"><svg role="img" aria-label="Bông hoa nở rộ"><use href="#flower"/></svg><figcaption>Cứ nở theo cách của riêng bạn.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- PHẦN H: LỜI KẾT -->
+<section class="sec finale" id="ketthuc" aria-labelledby="ketTitle">
+  <div class="fx" id="finaleFx" aria-hidden="true"></div>
+  <div class="wrap center finale-in reveal">
+    <div class="bloom-row" aria-hidden="true">
+      <svg style="--i:0;color:#F7C8D0"><use href="#flower"/></svg>
+      <svg style="--i:1;color:#D9B56D"><use href="#flower"/></svg>
+      <svg style="--i:2;color:#F7C8D0"><use href="#flower"/></svg>
+    </div>
+    <h2 id="ketTitle">Thế giới đẹp hơn vì có bạn.</h2>
+    <p class="end-line">Chúc mừng Ngày Phụ nữ Việt Nam 20/10.</p>
+    <footer class="foot">
+      <p>Made with love ♡ | 20.10</p>
+      <button class="btn ghost" id="toTop" type="button">↑ Quay lại đầu trang</button>
+    </footer>
+  </div>
+</section>
+
+</main>
+
+<!-- POPUP LỜI CHÚC -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTo" aria-hidden="true">
+  <div class="modal-box" id="modalBox">
+    <svg class="modal-flower" aria-hidden="true"><use href="#flower"/></svg>
+    <p class="modal-to" id="modalTo"></p>
+    <p class="modal-text" id="modalText"></p>
+    <div class="modal-actions">
+      <button class="btn wine" id="modalNext" type="button">Lời chúc khác</button>
+      <button class="btn ghost-dark" id="modalClose" type="button">Đóng</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- Nhạc nền: mặc định tắt. Nếu chưa có file, website vẫn chạy bình thường -->
+<audio id="bgm" src="music/nhac-nen.mp3" loop preload="none"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
