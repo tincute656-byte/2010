@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f9c6df">
+
+    <title>Vũ trụ yêu thương · 20.10</title>
+
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Hiệu ứng nền -->
+    <div class="aurora" aria-hidden="true"></div>
+    <canvas id="sky" aria-hidden="true"></canvas>
+
+    <!-- Phần đầu trang -->
+    <header class="topbar">
+
+        <a class="signature" href="#"
+           aria-label="Xuân Tín - về đầu trang">
+            Xuân Tín <span>♡</span>
+        </a>
+
+        <button class="music" id="musicBtn"
+                type="button"
+                aria-pressed="false"
+                title="Bật hoặc tắt nhạc nền">
+
+            <span class="equalizer" aria-hidden="true">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+
+            <span id="musicLabel">Bật nhạc yêu thương</span>
+        </button>
+
+    </header>
+
+    <main>
+
+        <!-- Tiêu đề chính -->
+        <section class="hero">
+
+            <div class="eyebrow">
+                20 tháng 10 · Ngày Phụ nữ Việt Nam
+            </div>
+
+            <h1>Vũ trụ yêu thương</h1>
+
+            <p class="subtitle">
+                Mỗi người phụ nữ là một vì sao.
+                Mỗi lời yêu thương là một ánh sáng
+                làm thế giới dịu dàng hơn.
+            </p>
+
+            <p class="hint">
+                ✧ Chạm vào từng vì sao để mở ra một điều yêu thương ✧
+            </p>
+
+        </section>
+
+        <!-- Hệ mặt trời yêu thương -->
+        <section class="stage"
+                 aria-label="Bản đồ tương tác vũ trụ yêu thương">
+
+            <!-- Quỹ đạo -->
+            <div class="orbit one"></div>
+            <div class="orbit two"></div>
+
+            <!-- Trái tim trung tâm -->
+            <div class="center" id="heartCenter"
+                 aria-label="Trái tim 20 tháng 10">
+
+                <div class="heart" aria-hidden="true">
+                    💗
+                </div>
+
+                <div class="center-copy">
+                    <strong>20.10</strong>
+
+                    <span>
+                        Thế giới dịu dàng hơn vì có bạn
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- Nhánh 1: Mẹ -->
+            <button class="node n1"
+                    data-topic="me"
+                    type="button">
+
+                <span class="emoji">🌷</span>
+                <b>Dành tặng Mẹ</b>
+                <small>Người giữ lửa</small>
+
+            </button>
+
+            <!-- Nhánh 2: Cô giáo -->
+            <button class="node n2"
+                    data-topic="teacher"
+                    type="button">
+
+                <span class="emoji">📚</span>
+                <b>Cô giáo</b>
+                <small>Người gieo mầm</small>
+
+            </button>
+
+            <!-- Nhánh 3: Tình bạn -->
+            <button class="node n3"
+                    data-topic="friend"
+                    type="button">
+
+                <span class="emoji">🫶</span>
+                <b>Tình bạn</b>
+                <small>Đóa hoa bên đời</small>
+
+            </button>
+
+            <!-- Nhánh 4: Người đặc biệt -->
+            <button class="node n4"
+                    data-topic="special"
+                    type="button">
+
+                <span class="emoji">💌</span>
+                <b>Người đặc biệt</b>
+                <small>Lời chưa nói</small>
+
+            </button>
+
+            <!-- Nhánh 5: Phụ nữ tuyệt vời -->
+            <button class="node n5"
+                    data-topic="women"
+                    type="button">
+
+                <span class="emoji">🌟</span>
+                <b>Phụ nữ tuyệt vời</b>
+                <small>Tỏa sáng theo cách riêng</small>
+
+            </button>
+
+            <!-- Nhánh 6: Điều chưa kịp nói -->
+            <button class="node n6"
+                    data-topic="unsaid"
+                    type="button">
+
+                <span class="emoji">✉️</span>
+                <b>Điều chưa kịp nói</b>
+                <small>Mở lá thư bí mật</small>
+
+            </button>
+
+            <!-- Nhánh 7: Vườn hoa lời chúc -->
+            <button class="node n7"
+                    data-topic="garden"
+                    type="button">
+
+                <span class="emoji">🌸</span>
+                <b>Vườn hoa lời chúc</b>
+                <small>Chạm để nhận yêu thương</small>
+
+            </button>
+
+        </section>
+
+        <!-- Khu vực gửi lời chúc -->
+        <section class="content-section">
+
+            <div class="glass-panel">
+
+                <h2 class="section-heading">
+                    Gửi một điều yêu thương ♡
+                </h2>
+
+                <p class="section-intro">
+                    Viết lời chúc của bạn và gửi nó vào trái tim chung.
+                    Một lời chân thành cũng có thể làm ai đó vui cả ngày.
+                </p>
+
+                <form class="wish-form" id="wishForm">
+
+                    <input
+                        id="wishInput"
+                        maxlength="180"
+                        aria-label="Lời chúc của bạn"
+                        placeholder="Hôm nay, mình muốn chúc bạn..."
+                        required
+                    >
+
+                    <button class="primary" type="submit">
+                        Gửi lời chúc ✨
+                    </button>
+
+                </form>
+
+                <!-- Danh sách lời chúc -->
+                <div class="wish-list"
+                     id="wishList"
+                     aria-live="polite">
+
+                    <div class="wish-chip">
+                        <span>♡</span>
+                        Chúc bạn luôn được yêu thương và trân trọng.
+                    </div>
+
+                    <div class="wish-chip">
+                        <span>♡</span>
+                        Mong mỗi ngày đều có một lý do để mỉm cười.
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Công cụ tạo thiệp -->
+            <div class="glass-panel create-card">
+
+                <h2 class="section-heading">
+                    Tạo tấm thiệp của riêng bạn
+                </h2>
+
+                <p class="section-intro">
+                    Gửi một lời chúc được viết riêng cho người bạn quý mến,
+                    rồi tải thiệp về dưới dạng ảnh PNG.
+                </p>
+
+                <form id="cardForm" class="form-grid">
+
+                    <input
+                        id="recipient"
+                        maxlength="45"
+                        placeholder="Tên người nhận (ví dụ: Mẹ yêu)"
+                        aria-label="Tên người nhận"
+                        required
+                    >
+
+                    <input
+                        id="sender"
+                        maxlength="45"
+                        placeholder="Tên người gửi (ví dụ: Xuân Tín)"
+                        aria-label="Tên người gửi"
+                        value="Xuân Tín"
+                    >
+
+                    <textarea
+                        id="cardMessage"
+                        maxlength="240"
+                        placeholder="Viết lời chúc thật chân thành..."
+                        aria-label="Lời chúc trên thiệp"
+                        required
+                    >Chúc bạn luôn bình an, hạnh phúc và tự tin tỏa sáng theo cách riêng của mình. Mong những điều dịu dàng nhất sẽ luôn tìm đến bạn.</textarea>
+
+                    <div class="card-actions"
+                         style="grid-column:1/-1">
+
+                        <button class="primary" type="submit">
+                            Tạo thiệp 20/10 🌷
+                        </button>
+
+                    </div>
+
+                </form>
+
+                <!-- Canvas hiển thị thiệp -->
+                <canvas
+                    id="cardCanvas"
+                    width="1200"
+                    height="760"
+                    class="hidden"
+                    aria-label="Bản xem trước thiệp chúc mừng"
+                ></canvas>
+
+                <!-- Nút tải ảnh thiệp -->
+                <div id="downloadWrap"
+                     class="card-actions hidden">
+
+                    <button class="primary" id="downloadBtn"
+                            type="button">
+                        Tải ảnh thiệp PNG ↓
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Chân trang -->
+    <footer>
+        <strong>Xuân Tín ♡</strong>
+        <br>
+        Được gửi đi bằng sự chân thành · 20.10
+    </footer>
+
+    <!-- Cửa sổ lời chúc -->
+    <div class="modal"
+         id="modal"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="modalTitle">
+
+        <article class="letter">
+
+            <button class="close"
+                    id="closeModal"
+                    type="button"
+                    aria-label="Đóng thư">
+                ×
+            </button>
+
+            <div class="stamp" id="modalEmoji">
+                🌷
+            </div>
+
+            <h2 id="modalTitle">
+                Gửi yêu thương
+            </h2>
+
+            <p id="modalBody"></p>
+
+            <div class="sign">
+                Thân gửi, Xuân Tín ♡
+            </div>
+
+        </article>
+
+    </div>
+
+    <!-- Thông báo tương tác -->
+    <div class="toast"
+         id="toast"
+         role="status"
+         aria-live="polite">
+    </div>
+
+    <!-- Liên kết file JavaScript -->
+    <script src="script.js" defer></script>
+
+</body>
+</html>
